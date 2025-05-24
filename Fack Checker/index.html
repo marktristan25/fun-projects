@@ -54,7 +54,7 @@
                 <span class="visually-hidden">Loading...</span>
             </div>
         </div>
-        <div class="welcoming mt-5 fw-bolder fs-3 text-center text-white">ASK BRO TO FACT CHECK SOMETHING!</div>
+        <div class="welcoming mt-5 fw-medium fs-4 text-center text-white">ASK BRO TO FACT CHECK SOMETHING! <br>Enter a claim, person's name, or a topic</div>
     </div>
 
 
@@ -112,8 +112,8 @@
 
         function displayContent(data) {
             if (!data.claims || data.claims.length === 0) {
-                content.innerHTML = "<p>No fact-checks found.</p>";
-                return;
+                content.innerHTML = "<p>No fact-checks found. <br>Suggestions:<br>Make sure all keywords are spelled correctly.<br>Try different keywords.<br>Try more general keywords.<br>Try fewer keywords.</p>";
+return;
             }
 
             content.innerHTML = "";
